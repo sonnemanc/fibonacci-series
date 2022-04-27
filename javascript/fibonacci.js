@@ -1,5 +1,13 @@
 function fibonacci(num) {
   // type your code here
+  let arr = [0,1]
+  let count = arr.length -1
+  while (count < num) {
+    let newValue = arr[arr.length - 2] + arr[arr.length - 1];
+    arr.push(newValue);
+    count += 1;
+  }
+  console.log(arr[arr.length - 1])
 }
 
 if (require.main === module) {
